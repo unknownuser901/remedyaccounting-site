@@ -1,13 +1,266 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-  <title>Remedy Accounting</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 100px; }
-  </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Remedy — Bookkeeping Services for Small Businesses</title>
+<meta content="Remedy provides reliable, accurate QuickBooks Online bookkeeping for small businesses and nonprofits. Catch-up, clean-up, and monthly plans." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    :root {
+      --brand: #084E8F; /* Remedy Blue (logo darkest) */
+      --brand2: #0A66C2; /* Remedy Blue (accent) */
+      --neutral-dark: #1F2A37; /* Steel */
+      --neutral-light: #F3F4F6; /* Light Gray */
+    }
+    * { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .container { max-width: 1100px; }
+  .badge { background: #eaf4ff; color: var(--brand); }
+    .shadow-soft { box-shadow: 0 10px 25px rgba(2, 6, 23, 0.06); }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.65); }
+    a, button { transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease; }
+    a:active, button:active { transform: translateY(1px); }
+    h1, h2, h3, h4 { color: var(--brand); }
+    section { padding-top: 4rem; padding-bottom: 4rem; }
+    .btn-pill { border-radius: 22px; padding: 16px 22px; font-weight: 800; letter-spacing: .02em; }
+    .btn-outline { background: #fff; border: 2px solid #e2e8f0; color: #1f2937; }
+    .btn-outline:hover { background: #f8fafc; }
+    .btn-filled { background: var(--brand2); color: #fff; border: 2px solid var(--brand2); }
+  .btn-filled:hover { background: var(--brand2); border-color: var(--brand2); }
+    /* Harmonize CTAs: show button-like elements in ALL CAPS */
+    .btn-pill, .btn-outline, .btn-filled, button {
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+  .icon { width: 20px; height: 20px; }
+  /* Top nav link styles */
+  .nav-link { display: inline-block; padding: 6px 8px; border-radius: 8px; color: inherit; text-decoration: none; }
+  .nav-link:hover { background: rgba(10,102,194,0.08); color: var(--brand2); }
+  
+.quicknote-hover-match:hover { 
+  background: var(--brand2) !important; 
+  border-color: var(--brand2) !important; 
+  color: #fff !important;
+}
+</style>
+<style>html { scroll-behavior: smooth; }</style>
+<style>
+.quicknote-hover-match {
+  background: var(--brand) !important; 
+  border-color: var(--brand) !important;
+  color: #fff !important;
+}
+.quicknote-hover-match:hover { 
+  background: var(--brand2) !important; 
+  border-color: var(--brand2) !important; 
+  color: #fff !important;
+}
+</style>
+
+  <!-- Open Graph (for iMessage/FB/LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://remedy.example.com/">
+  <meta property="og:title" content="Bookkeeping Services for Small Businesses">
+  <meta property="og:description" content="Helping small businesses keep their books clean, clear, and up-to-date.">
+  <meta property="og:image" content="https://remedy.example.com/og-image.png?v=3">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bookkeeping Services for Small Businesses">
+  <meta name="twitter:description" content="Helping small businesses keep their books clean, clear, and up-to-date.">
+  <meta name="twitter:image" content="https://remedy.example.com/og-image.png?v=3">
+
 </head>
-<body>
-  <h1>Remedy Accounting</h1>
-  <p>Website coming soon.</p>
+<body class="bg-[var(--neutral-light)] text-[var(--neutral-dark)]">
+<a id="top"></a>
+<!-- Top Bar -->
+<header class="bg-white border-b border-slate-200/70 sticky top-0 z-40">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+  <a href="remedy-index.html"><img src="remedy-logo-A.png" alt="Remedy logo" class="h-28 w-56 object-cover select-none py-2" draggable="false"></a>
+  <nav class="hidden md:flex items-center gap-6 text-sm">
+    <a class="nav-link" href="#services">Services</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </nav>
+</div>
+</header>
+<!-- Hero -->
+<section class="bg-gradient-to-b from-white to-[var(--neutral-light)]">
+<div class="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+<div>
+<h1 class="mt-4 text-4xl sm:text-5xl font-black leading-tight">Stress-free bookkeeping for busy owners.</h1>
+<p class="mt-4 text-lg text-slate-600">Remedy delivers accurate monthly financials, catch-up &amp; clean-up services, and hands-on support so you can focus on growth.</p>
+<!-- New top CTA buttons -->
+<div class="mt-8 flex flex-col sm:max-w-md gap-4">
+<a class="btn-pill btn-outline flex items-center justify-center gap-3 shadow-soft" href="https://calendly.com/jordan-jbbookkeepers/30min" rel="noopener" target="_blank">Schedule a Free Consultation</a>
+<a class="btn-pill btn-filled flex items-center justify-center gap-3 shadow-soft quicknote-hover-match" href="#contact">
+<!-- mail icon -->
+<svg class="icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm-1.4 3L12 11 5.4 7h13.2zM4 18V8l8 5 8-5v10H4z"></path></svg>SEND US A QUICK NOTE</a>
+</div>
+</div>
+<div>
+<div class="relative rounded-2xl overflow-hidden shadow-soft bg-white">
+<img alt="Bookkeeping dashboard" class="w-full h-[340px] object-cover" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&amp;w=1600&amp;auto=format&amp;fit=crop"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Logos / Trust -->
+<section class="py-10">
+</section>
+
+<!-- Services -->
+<section class="py-16 bg-white" id="services">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-black">Services</h2>
+<p class="mt-2 text-slate-600">Flexible support from quick clean‑ups to full‑service monthly bookkeeping.</p>
+<div class="mt-8 grid md:grid-cols-2 gap-6">
+<!-- Monthly Bookkeeping -->
+<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+<div class="text-[var(--brand)] font-bold">Monthly Bookkeeping</div>
+<p class="mt-2 text-sm text-slate-600">Reconciliations, categorization, P&amp;L/Balance Sheet, month‑end close, and basic AP/AR support.</p>
+<ul class="mt-4 space-y-2 text-sm">
+<li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Dedicated bookkeeper</li>
+<li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Cash‑ or accrual‑basis</li>
+<li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Tax‑ready financial package</li>
+</ul>
+</div>
+<!-- Catch-Up & Clean-Up -->
+<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+<div class="text-[var(--brand)] font-bold">Catch‑Up &amp; Clean‑Up</div>
+<p class="mt-2 text-sm text-slate-600">Behind on your books? We’ll get you current fast and fix chart‑of‑accounts issues.</p>
+<ul class="mt-4 space-y-2 text-sm">
+<li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Historical reconciliations</li>
+<li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Transaction re‑class &amp; review</li>
+<li class="flex gap-2"><span class="text-[var(--brand)]">•</span> CPA handoff ready</li>
+</ul>
+</div>
+<!-- Consulting Services -->
+<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+  <div class="text-[var(--brand)] font-bold">Bookkeeping Consulting</div>
+  <p class="mt-2 text-sm text-slate-600">Practical, bookkeeping‑focused consulting to help you set up the right systems, choose the best tools, and implement automations (including AI workflows) that make bookkeeping faster and more reliable.</p>
+  <ul class="mt-4 space-y-2 text-sm">
+    <li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Software &amp; tool selection and setup (QuickBooks, Xero, integrations)</li>
+    <li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Workflow design, automations, and connector setup</li>
+    <li class="flex gap-2"><span class="text-[var(--brand)]">•</span> AI‑powered bookkeeping tips, templates, and staff training</li>
+  </ul>
+</div>
+<!-- Initial Bookkeeping Setup -->
+<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+  <div class="text-[var(--brand)] font-bold">Initial Bookkeeping Setup</div>
+  <p class="mt-2 text-sm text-slate-600">Full setup for new clients: chart of accounts, opening balances, bank connections, and reporting structure.</p>
+  <ul class="mt-4 space-y-2 text-sm">
+    <li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Chart of accounts design &amp; mapping</li>
+    <li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Bank &amp; payments integration</li>
+    <li class="flex gap-2"><span class="text-[var(--brand)]">•</span> Initial reconciliations &amp; training handoff</li>
+  </ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section class="py-16 bg-[var(--neutral-light)]" id="about">
+<div class="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+<div>
+<img alt="Team at work" class="rounded-2xl shadow-soft w-full h-[360px] object-cover" src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?q=80&amp;w=1600&amp;auto=format&amp;fit=crop"/>
+</div>
+<div>
+<h2 class="text-3xl font-black">About Remedy</h2>
+<p class="mt-3 text-slate-600">We help small businesses and nonprofits across the U.S. keep their books clean, clear, and up-to-date. We work with most accounting software platforms and deliver straightforward, easy-to-read reports that help owners make confident decisions.</p>
+<ul class="mt-4 space-y-2" style="list-style: none; padding-left: 0;; margin-top: 12px">
+<li><span class="text-[var(--brand)]">•</span> Simple, flat-rate pricing — no surprises</li>
+<li><span class="text-[var(--brand)]">•</span> Fast, responsive support</li>
+<li><span class="text-[var(--brand)]">•</span> Experience across e-commerce, service industries, trades, and nonprofits</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="py-16" id="contact">
+<div class="container mx-auto px-4">
+<div class="grid lg:grid-cols-5 gap-8 items-stretch">
+<div class="lg:col-span-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+<h3 class="text-2xl font-extrabold">SEND US A QUICK NOTE</h3>
+<p class="mt-2 text-slate-600 text-sm">Tell us about your business and current bookkeeping setup. We’ll reply the same day.</p>
+<form action="https://formspree.io/f/mzzvwjvo" class="mt-6 space-y-4" method="POST"><input id="selected-plan" name="plan" type="hidden" value=""/><input id="email-subject" name="_subject" type="hidden" value="New message from Remedy site"/><input name="_gotcha" style="display:none" type="text"/>
+<div class="grid sm:grid-cols-2 gap-4">
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3" name="name" placeholder="Full name" required=""/>
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3" name="email" placeholder="Email" required="" type="email"/>
+</div>
+<div class="grid sm:grid-cols-2 gap-4">
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3" name="phone" placeholder="Phone (optional)"/>
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3" name="company" placeholder="Company"/>
+</div>
+<textarea class="w-full rounded-xl border border-slate-300 px-4 py-3" name="message" placeholder="What do you need help with?" rows="4"></textarea>
+<button class="rounded-xl bg-[var(--brand)] px-5 py-3 text-white font-semibold hover:bg-emerald-700">Send</button>
+</form>
+</div>
+<div class="lg:col-span-2 rounded-2xl bg-[var(--brand)] text-white p-4 shadow-soft" id="book-call">
+<h3 class="text-2xl font-extrabold">Book a call</h3>
+<p class="mt-2 text-emerald-50 text-sm">Let’s connect! Pick a time that works best for you.</p>
+  <a class="mt-4 inline-flex items-center justify-center btn-pill btn-outline bg-white text-[var(--neutral-dark)] hover:bg-slate-50" href="https://calendly.com/jordan-jbbookkeepers/30min" target="_blank">Schedule a Free Consultation</a>
+<div class="mt-4">
+<h4 class="font-bold">Contact</h4>
+<ul class="mt-2 space-y-2 text-sm/6">
+<li><strong>Email:</strong> <a href="mailto:info@remedyaccounting.com">info@remedyaccounting.com</a></li>
+<li><strong>Phone:</strong> 801-317-7835</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="py-10 bg-white border-t border-slate-200">
+<div class="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-sm">© <span id="year"></span> Remedy. All rights reserved.</p>
+<nav class="text-sm flex items-center gap-4">
+<a class="hover:text-[var(--brand)]" href="#">Privacy</a>
+<a class="hover:text-[var(--brand)]" href="#">Terms</a>
+<a class="hover:text-[var(--brand)]" href="#contact">Contact</a>
+</nav>
+</div>
+</footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+<script>
+function setPlanThenScroll(plan) {
+  var field = document.getElementById('selected-plan');
+  if (field) { field.value = plan; }
+  var el = document.getElementById('contact');
+  if (el && el.scrollIntoView) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else if (el) {
+    window.location.hash = '#contact';
+  }
+}
+</script>
+<!-- no active nav state on purpose for single-page site -->
+
+<!-- Added reb2b script -->
+<script>
+!function(key) {
+  if (window.reb2b) return;
+  window.reb2b = {loaded: true};
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";
+  document.getElementsByTagName("script")[0].parentNode.insertBefore(
+    s,
+    document.getElementsByTagName("script")[0]
+  );
+}("DNXY8HXZLMO0");
+</script>
+
 </body>
 </html>
