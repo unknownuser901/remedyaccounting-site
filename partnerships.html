@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remedy Accounting · Partnerships</title>
+  <meta name="description" content="Partnership opportunities with Remedy Accounting — white‑label bookkeeping, revenue share, and combined packages." />
+
+  <!-- Fonts (system stack for portability) -->
+  <style>
+    :root{
+      --brand:#2A46C5;           /* dark blue */
+      --brand-500:#3B57D6;
+      --brand-600:#2440BE;
+      --brand-700:#1D369C;
+      --ink:#0f172a;             /* slate-900 */
+      --muted:#475569;           /* slate-600 */
+      --border:#e2e8f0;          /* slate-200 */
+      --card:#ffffff;
+      --bg:#f8fafc;              /* slate-50 */
+      --success:#17a34a;         /* green-600-ish */
+    }
+
+    /* CSS reset (lightweight) */
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color:var(--ink); background:var(--bg); line-height:1.6}
+    img,svg{display:block; max-width:100%}
+    h1,h2,h3{line-height:1.25; margin:0 0 .5rem}
+    h1{font-size:clamp(1.75rem,2.6vw,2.4rem); letter-spacing:.2px}
+    h2{font-size:clamp(1.15rem,1.6vw,1.25rem); color:var(--muted); font-weight:600}
+    h3{font-size:1.1rem}
+    p{margin:.25rem 0 .75rem 0}
+    a{color:var(--brand-600); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Layout */
+    .container{max-width:1040px; margin:0 auto; padding:28px 20px 72px}
+    .page-title{display:flex; flex-direction:column; align-items:center; gap:.25rem; text-align:center; padding-top:8px; padding-bottom:12px}
+    .rule{height:2px; background:linear-gradient(90deg, transparent, var(--border), transparent); margin:18px 0 24px}
+
+    /* Cards & panels */
+    .grid{display:grid; gap:18px}
+    .grid-2{grid-template-columns:1fr; }
+    @media (min-width:880px){ .grid-2{grid-template-columns:1fr 1fr;} }
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px 18px}
+    .card h3{font-weight:700}
+    .shadow{box-shadow:0 1px 0 rgba(15,23,42,.02), 0 12px 32px rgba(2,6,23,.06)}
+    .section-title{display:flex; align-items:center; gap:.6rem; font-weight:800; color:#0b132a; font-size:1.1rem; margin-bottom:10px}
+    .section-title .emoji{font-size:1.15rem}
+
+    /* Lists with checks */
+    .list{display:grid; gap:10px}
+    .li{display:flex; align-items:flex-start; gap:.6rem}
+    .li svg{flex:0 0 18px; margin-top:2px}
+    .muted{color:var(--muted)}
+
+    /* Opportunities */
+    .opps{display:grid; gap:16px; grid-template-columns:1fr}
+    @media (min-width:760px){ .opps{grid-template-columns:repeat(3,1fr);} }
+    .opp{border:1px solid var(--border); background:#fff; border-radius:14px; padding:18px}
+    .opp .icon{width:34px; height:34px; display:grid; place-items:center; border-radius:999px; background:rgba(42,70,197,.08); margin-bottom:.5rem}
+    .opp h4{margin:.1rem 0 .35rem 0; font-size:1.05rem}
+    .opp p{color:var(--muted); font-size:.95rem}
+
+    /* Why panel */
+    .why{border-radius:16px; padding:26px 18px 22px; color:white;
+         background: linear-gradient(135deg, var(--brand-700), var(--brand-500));}
+    .why h3{font-size:1.35rem}
+    .whygrid{display:grid; gap:18px; grid-template-columns:1fr}
+    @media (min-width:760px){ .whygrid{grid-template-columns:repeat(3,1fr);} }
+    .why-item{display:flex; flex-direction:column; align-items:center; text-align:center; gap:.35rem}
+    .why-badge{width:46px; height:46px; display:grid; place-items:center; border-radius:12px; background:rgba(255,255,255,.12);}
+    .why-item h5{margin:.25rem 0 .1rem 0; font-size:1.02rem}
+    .why-item p{margin:0; opacity:.9; font-size:.95rem; line-height:1.5}
+
+    /* CTA footer */
+    .cta{margin-top:18px; background:#fff; border:1px solid var(--border); border-radius:12px; padding:16px; text-align:center}
+    .cta a.button{display:inline-block; border-radius:10px; border:1px solid rgba(2,6,23,.08);
+      padding:.7rem 1rem; background:var(--brand); color:#fff; font-weight:700; letter-spacing:.2px}
+    .cta a.button:hover{background:var(--brand-700)}
+
+    /* Section headers */
+    .cap{font-weight:800; color:#0b132a; letter-spacing:.3px; margin-bottom:8px; display:flex; align-items:center; gap:.5rem}
+    .cap .emoji{font-size:1.05rem}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="page-title">
+      <h1>Remedy Accounting</h1>
+      <h2>Your Trusted Bookkeeping Partner</h2>
+    </header>
+
+    <div class="rule" aria-hidden="true"></div>
+
+    <!-- Services -->
+    <section class="grid grid-2">
+      <article class="card shadow">
+        <div class="cap">
+          <!-- book icon -->
+          <svg class="emoji" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" style="flex:0 0 auto;">
+            <path fill="currentColor" d="M3 6.5A2.5 2.5 0 0 1 5.5 4h12A2.5 2.5 0 0 1 20 6.5V19a1 1 0 0 1-1.39.91L12 17l-6.61 2.91A1 1 0 0 1 4 19V6.5zM6 6v11.09L11.39 15 6 12.91V6zM18 6v6.91L12.61 13 18 10.09V6z" />
+          </svg>
+          <span>Standard Bookkeeping Services</span>
+        </div>
+        <div class="list">
+          <div class="li">
+            <!-- check icon -->
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1.2 1.2 0 10-1.7 1.7l4.3 4.3a1.2 1.2 0 001.7 0l9.3-9.3a1.2 1.2 0 10-1.7-1.7L9 16.2z" fill="currentColor" style="color:var(--success)"/></svg>
+            <span>Categorize and reconcile bank and credit card transactions</span>
+          </div>
+          <div class="li">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1.2 1.2 0 10-1.7 1.7l4.3 4.3a1.2 1.2 0 001.7 0l9.3-9.3a1.2 1.2 0 10-1.7-1.7L9 16.2z" fill="currentColor" style="color:var(--success)"/></svg>
+            <span>Maintain accurate books that reconcile with payroll, bill pay, and all other financial systems</span>
+          </div>
+          <div class="li">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1.2 1.2 0 10-1.7 1.7l4.3 4.3a1.2 1.2 0 001.7 0l9.3-9.3a1.2 1.2 0 10-1.7-1.7L9 16.2z" fill="currentColor" style="color:var(--success)"/></svg>
+            <span>Deliver monthly financial statements (including P&amp;L and Balance Sheet)</span>
+          </div>
+          <div class="li">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1.2 1.2 0 10-1.7 1.7l4.3 4.3a1.2 1.2 0 001.7 0l9.3-9.3a1.2 1.2 0 10-1.7-1.7L9 16.2z" fill="currentColor" style="color:var(--success)"/></svg>
+            <span>Provide timely month-end close and reporting consistency</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card shadow">
+        <div class="cap">
+          <!-- add-on / plus icon -->
+          <svg class="emoji" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" style="flex:0 0 auto;">
+            <circle cx="12" cy="12" r="9" fill="currentColor" />
+            <path d="M11 7h2v4h4v2h-4v4h-2v-4H7v-2h4V7z" fill="#fff"/>
+          </svg>
+          <span>Add-On Services</span>
+        </div>
+        <div class="list">
+          <div class="li"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1.2 1.2 0 10-1.7 1.7l4.3 4.3a1.2 1.2 0 001.7 0l9.3-9.3a1.2 1.2 0 10-1.7-1.7L9 16.2z" fill="currentColor" style="color:var(--success)"/></svg>
+            <span>Expedited month‑end close (as quick as 5 business days)</span></div>
+          <div class="li"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1.2 1.2 0 10-1.7 1.7l4.3 4.3a1.2 1.2 0 001.7 0l9.3-9.3a1.2 1.2 0 10-1.7-1.7L9 16.2z" fill="currentColor" style="color:var(--success)"/></svg>
+            <span>Custom financial reporting and dashboards</span></div>
+          <div class="li"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1.2 1.2 0 10-1.7 1.7l4.3 4.3a1.2 1.2 0 001.7 0l9.3-9.3a1.2 1.2 0 10-1.7-1.7L9 16.2z" fill="currentColor" style="color:var(--success)"/></svg>
+            <span>Modified cash or accrual accounting</span></div>
+          <div class="li"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 16.2l-3.5-3.5a1.2 1.2 0 10-1.7 1.7l4.3 4.3a1.2 1.2 0 001.7 0l9.3-9.3a1.2 1.2 0 10-1.7-1.7L9 16.2z" fill="currentColor" style="color:var(--success)"/></svg>
+            <span>Specialized requests and custom integrations</span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Opportunities -->
+    <section class="card shadow" style="margin-top:14px;">
+      <div class="section-title"><span>Partnership Opportunities</span></div>
+      <div class="opps">
+        <div class="opp">
+          <div class="icon">
+            <!-- nametag -->
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" role="img" aria-label="Nametag icon">
+              <!-- outer tag -->
+              <rect x="2" y="5" width="20" height="14" rx="2" fill="currentColor" style="color:var(--brand-600)"/>
+              <!-- person circle -->
+              <circle cx="8" cy="11" r="2.2" fill="#fff"/>
+              <!-- name line -->
+              <rect x="11.5" y="10" width="6" height="1.6" rx="0.8" fill="#fff"/>
+            </svg>
+          </div>
+          <h4>Full Whitelabel Service</h4>
+          <p class="muted">Provide seamless, branded bookkeeping services powered by Remedy. You own the client relationship — we handle the delivery.</p>
+        </div>
+
+        <div class="opp">
+          <div class="icon">
+            <!-- dollar in circle -->
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" role="img" aria-label="Revenue share icon">
+              <circle cx="12" cy="12" r="9" fill="currentColor" style="color:var(--brand-600)"/>
+              <text x="12" y="15.2" text-anchor="middle" font-size="10" font-weight="700" fill="#fff" style="font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;">$</text>
+            </svg>
+          </div>
+          <h4>Revenue Share</h4>
+          <p class="muted">Earn recurring revenue by referring clients to our bookkeeping services — we handle delivery and support.</p>
+        </div>
+
+        <div class="opp">
+          <div class="icon">
+            <!-- layers -->
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" style="color:var(--brand-600)" d="M12 3l9 5-9 5-9-5 9-5zm0 8.9l9-5V12l-9 5-9-5V6.9l9 5zM3 15.1l9 5 9-5V18l-9 5-9-5v-2.9z"/></svg>
+          </div>
+          <h4>Combined Packages</h4>
+          <p class="muted">Bundle bookkeeping services into your existing offerings to deliver a complete, integrated financial package.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Remedy -->
+    <section class="why shadow" style="margin-top:14px;">
+      <h3>Why Remedy?</h3>
+      <div class="whygrid">
+        <div class="why-item">
+          <div class="why-badge">
+            <!-- icon: open book -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 4h7a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 4h-7a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h8z"/>
+            </svg>
+          </div>
+          <h5>Proven Playbook</h5>
+          <p>We aren't just guessing, we've done this before. After years of building and scaling successful bookkeeping operations, we’ve refined the systems that keep small business bookkeeping simple and scalable</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-badge">
+            <!-- icon: gears -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="9" r="1.5"/>
+                <path d="M9 2v2M9 14v2M2 9h2M14 9h2M4.22 4.22l1.42 1.42M12.36 12.36l1.42 1.42M4.22 13.78l1.42-1.42M12.36 5.64l1.42-1.42"/>
+                <circle cx="17" cy="17" r="1.5"/>
+                <path d="M17 10v2M17 22v2M10 17h2M22 17h2M12.36 12.36l1.42 1.42M20.5 20.5l1.42 1.42M12.36 21.64l1.42-1.42M20.5 13.5l1.42-1.42"/>
+              </svg>
+          </div>
+          <h5>Systems That Scale</h5>
+          <p>By using the right tools in the right way, we automate what should be automated and focus people where it matters — keeping costs low and accuracy high</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-badge">
+            <!-- icon: simple circle -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="4"/>
+              </svg>
+          </div>
+          <h5>Simplicity That Works</h5>
+          <p>Our process strips away unnecessary complexity and focuses on clean, clear, reliable financials that small businesses can actually understand and use</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta shadow">
+      <p class="muted" style="margin:0 0 .6rem 0;">Contact us to discuss partnership opportunities</p>
+      <a href="/contact" class="button" aria-label="Contact Remedy Accounting">Get in touch</a>
+    </section>
+  </main>
+</body>
+</html>
